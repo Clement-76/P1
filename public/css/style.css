@@ -5,7 +5,6 @@ html {
 
 body {
     margin: 0;
-    overflow-x: hidden;
 }
 
 section {
@@ -72,19 +71,42 @@ header [href="#home"] {
 
 /*first section styles*/
 #slider {
+    overflow: hidden;
     margin-top: 87px;
 }
 
 #slider_images {
-    width: 200%;
+    position: relative;
+    width: 300%;
+    animation: slider 20s infinite;
 }
 
 #slider_images img {
-    width: 50%;
+    width: 33.33%;
     float: left;
 }
 
-
+@keyframes slider {
+    0% {
+        left: 0%;
+    }
+    
+    40% {
+        left: 0%;
+    }
+    
+    50% {
+        left: -100%;
+    }
+    
+    90% {
+        left: -100%;
+    }
+    
+    100% {
+        left: -200%;
+    }
+}
 
 
 
