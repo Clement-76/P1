@@ -108,11 +108,12 @@ header [href="#home"] {
 }
 
 #loading {
-    width: 100%;
+    width: 0%;
     height: 5px;
     background-color: #5DADD3;
     position: absolute;
     bottom: 0;
+    animation: loading_bar 20s linear infinite;
 }
 
 @keyframes slider {
@@ -156,5 +157,27 @@ header [href="#home"] {
 
     100% {
         left: 66.66%;
+    }
+}
+
+@keyframes loading_bar {
+    0% {
+        width: 0%;
+    }
+
+    40% {
+        width: 33.33%;
+    }
+
+    50% {
+        width: 33.33%;
+    }
+
+    90% {
+        width: 66.66%;
+    }
+
+    100% {
+        width: 66.66%;
     }
 }
