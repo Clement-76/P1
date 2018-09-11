@@ -5,11 +5,14 @@ html {
 
 body {
     margin: 0;
+    overflow-x: hidden;
 }
 
+/*
 section {
     height: 100%;
 }
+*/
 
 /*header styles*/
 header {
@@ -21,6 +24,7 @@ header {
     align-items: center;
     justify-content: space-around;
     height: 87px;
+    z-index: 999;
 }
 
 header a img {
@@ -70,52 +74,87 @@ header [href="#home"] {
 }
 
 /*first section styles*/
-#slider {
-    overflow: hidden;
-    margin-top: 87px;
+#home {
+    height: 100%;
 }
 
-#slider_images {
+#home > div:first-child {
+    height: 87px;
+}
+
+#home > div:last-child {
+    clear: left;
+    height: 100px;
+    background: linear-gradient(#fff, #e3e3e3);
+}
+
+#slider {
+    overflow: hidden;
+    max-height: calc(100% - 187px);
     position: relative;
     width: 300%;
     animation: slider 20s infinite;
 }
 
-#slider_images img {
+#slider img {
     width: 33.33%;
     float: left;
+}
+
+#text {
+    position: absolute;
+    top: 50px;
+    animation: text_slider 20s infinite;
+}
+
+#loading {
+    width: 100%;
+    height: 5px;
+    background-color: #5DADD3;
+    position: absolute;
+    bottom: 0;
 }
 
 @keyframes slider {
     0% {
         left: 0%;
     }
-    
+
     40% {
         left: 0%;
     }
-    
+
     50% {
         left: -100%;
     }
-    
+
     90% {
         left: -100%;
     }
-    
+
     100% {
         left: -200%;
     }
 }
 
+@keyframes text_slider {
+    0% {
+        left: 0%;
+    }
 
+    40% {
+        left: 0%;
+    }
 
+    50% {
+        left: 33.33%;
+    }
 
+    90% {
+        left: 33.33%;
+    }
 
-
-
-/*
-#tel {
-    border-bottom: 1px dotted black;
+    100% {
+        left: 66.66%;
+    }
 }
-*/
