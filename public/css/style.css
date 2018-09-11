@@ -102,9 +102,42 @@ header [href="#home"] {
 }
 
 #text {
+    height: 40%;
+    width: 14%;
     position: absolute;
-    top: 50px;
+    top: 50%;
+    transform: translateY(-50%);
     animation: text_slider 20s infinite;
+}
+
+#text h1 {
+    margin: 0;
+    font-family: 'roboto';
+    font-weight: bold;
+    font-size: 200%;
+}
+
+#text p,
+#text a {
+    font-family: 'roboto';
+}
+
+#text a {
+    text-decoration: none;
+    background-color: #5DADD3;
+    padding: 10px;
+    border-radius: 3px;
+    border-bottom: 3px solid #4A86A5;
+    position: relative;
+    top: 15px;
+}
+
+#text > * {
+    color: #fff;
+}
+
+#text span {
+    color: #5DADD3;
 }
 
 #loading {
@@ -140,23 +173,23 @@ header [href="#home"] {
 
 @keyframes text_slider {
     0% {
-        left: 0%;
+        left: 3%;
     }
 
     40% {
-        left: 0%;
+        left: 3%;
     }
 
     50% {
-        left: 33.33%;
+        left: 36.33%;
     }
 
     90% {
-        left: 33.33%;
+        left: 36.33%;
     }
 
     100% {
-        left: 66.66%;
+        left: 69.66%;
     }
 }
 
