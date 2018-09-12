@@ -6,15 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Web Agency</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-    <link rel="stylesheet" href="public/css/fonts.css">
-    <link rel="stylesheet" href="public/css/style.css">
-    <link rel="shortcut icon" type="image/ico" href="public/images/ico/favicon.ico">
+    <link rel="stylesheet" href="/public/css/fonts.css">
+    <link rel="stylesheet" href="/public/css/style.css">
+    <link rel="shortcut icon" type="image/ico" href="/public/images/ico/favicon.ico">
 </head>
 
 <body>
     <header>
         <a href="index.html">
-            <img src="public/images/logo.png" alt="logo WebAgency">
+            <img src="/public/images/logo.png" alt="logo WebAgency">
         </a>
         <nav>
             <ul>
@@ -29,23 +29,23 @@
     <section id="home">
         <div></div>
         <div id="slider">
-            <img src="public/images/slider/bg1.jpg" alt="premiere image slider">
-            <img src="public/images/slider/bg2.jpg" alt="seconde image slider">
-            <img src="public/images/slider/bg1.jpg" alt="troisieme image slider">
+            <img src="/public/images/slider/bg1.jpg" alt="premiere image slider">
+            <img src="/public/images/slider/bg2.jpg" alt="seconde image slider">
+            <img src="/public/images/slider/bg1.jpg" alt="troisieme image slider">
             <div id="loading"></div>
 
-            <div id="text">
+            <div id="text_slider">
                 <h1><span>WEBAGENCY</span> : L'AGENCE DE TOUS VOS PROJETS !</h1>
                 <p>Vous avez un projet web ? La WebAgency vous aide à le réaliser !</p>
                 <a href="#services">Plus d'infos</a>
             </div>
 
-            <div id="semi_circle_left">
-                <div id="left_arrow"></div>
+            <div id="left" class="semi_circle">
+                <div class="arrow"></div>
             </div>
 
-            <div id="semi_circle_right">
-                <div id="right_arrow"></div>
+            <div id="right" class="semi_circle">
+                <div class="arrow"></div>
             </div>
         </div>
         <div></div>
@@ -57,7 +57,7 @@
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate commodi pariatur officia iusto, aperiam voluptas quam repellendus. Eos illum saepe consectetur mollitia natus?</p>
         <div>
             <div>
-                <img src="public/images/main-feature.png" alt="ecran d'ordinateur">
+                <img src="/public/images/main-feature.png" alt="ecran d'ordinateur">
             </div>
             <div>
                 <div>
@@ -92,29 +92,87 @@
             </ul>
         </div>
         <div id="projects">
-            <div><img src="public/images/portfolio/01.jpg" alt="projet 1"></div>
-            <div><img src="public/images/portfolio/02.jpg" alt="projet 2"></div>
-            <div><img src="public/images/portfolio/03.jpg" alt="projet 3"></div>
-            <div>
-                <img src="public/images/portfolio/04.jpg" alt="projet 4">
+            <article>
+                <img src="/public/images/portfolio/01.jpg" alt="projet 1">
+                <div>
+                    <h3>Portfolio Item 1</h3>
+                    <p>Lorem ipsum dolor sit.</p>
+                    <div><i class="fas fa-eye"></i></div>
+                </div>
+            </article>
+            
+            <article>
+                <img src="/public/images/portfolio/02.jpg" alt="projet 2">
+                <div>
+                    <h3>Portfolio Item 2</h3>
+                    <p>Lorem ipsum dolor sit.</p>
+                    <div><i class="fas fa-eye"></i></div>
+                </div>
+            </article>
+            
+            <article>
+                <img src="/public/images/portfolio/03.jpg" alt="projet 3">
+                <div>
+                    <h3>Portfolio Item 3</h3>
+                    <p>Lorem ipsum dolor sit.</p>
+                    <div><i class="fas fa-eye"></i></div>
+                </div>
+            </article>
+            
+            <article>
+                <img src="/public/images/portfolio/04.jpg" alt="projet 4">
                 <div>
                     <h3>Portfolio Item 4</h3>
                     <p>Lorem ipsum dolor sit.</p>
                     <div><i class="fas fa-eye"></i></div>
                 </div>
-            </div>
-            <div><img src="public/images/portfolio/05.jpg" alt="projet 5"></div>
-            <div><img src="public/images/portfolio/06.jpg" alt="projet 6"></div>
-            <div><img src="public/images/portfolio/07.jpg" alt="projet 7"></div>
-            <div><img src="public/images/portfolio/08.jpg" alt="projet 8"></div>
+            </article>
+            
+            <article>
+                <img src="/public/images/portfolio/05.jpg" alt="projet 5">
+                <div>
+                    <h3>Portfolio Item 5</h3>
+                    <p>Lorem ipsum dolor sit.</p>
+                    <div><i class="fas fa-eye"></i></div>
+                </div>
+            </article>
+            
+            <article>
+                <img src="/public/images/portfolio/06.jpg" alt="projet 6">
+                <div>
+                    <h3>Portfolio Item 6</h3>
+                    <p>Lorem ipsum dolor sit.</p>
+                    <div><i class="fas fa-eye"></i></div>
+                </div>
+            </article>
+            
+            <article>
+                <img src="/public/images/portfolio/07.jpg" alt="projet 7">
+                <div>
+                    <h3>Portfolio Item 7</h3>
+                    <p>Lorem ipsum dolor sit.</p>
+                    <div><i class="fas fa-eye"></i></div>
+                </div>
+            </article>
+            
+            <article>
+                <img src="/public/images/portfolio/08.jpg" alt="projet 8">
+                <div>
+                    <h3>Portfolio Item 8</h3>
+                    <p>Lorem ipsum dolor sit.</p>
+                    <div><i class="fas fa-eye"></i></div>
+                </div>
+            </article>
+            
         </div>
     </section>
 
-    <section id="contact">
+    <footer id="contact">
+        <div></div>
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5248.44914168933!2d2.345652081795959!3d48.872995325819815!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e145ccb3091%3A0x9495beee8c96ec27!2s25+Rue+d&#39;Hauteville%2C+75010+Paris!5e0!3m2!1sfr!2sfr!4v1536324366468" width="600" height="450" frameborder="0" style="border:0" allowfullscreen>
         </iframe>
         <form>
-            <h2>Contact Info</h2>
+            <h3>Contact Info</h3>
             <p>
                 <strong>WebAgency SAS</strong><br>
                 25 Rue d'Hauteville 75010 Paris<br>
@@ -134,7 +192,7 @@
                 <input type="submit" value="Send Message">
             </p>
         </form>
-    </section>
+    </footer>
 </body>
 
 </html>
