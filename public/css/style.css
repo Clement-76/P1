@@ -459,6 +459,51 @@ section > p {
     border-radius: 0 5px 5px 0;
 }
 
+#projects {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-content: space-between;
+    flex-wrap: wrap;
+}
+
 #projects img {
-    width: 20%;
+    display: block;
+    width: 550px;
+}
+
+#projects article {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.project_infos {
+    position: absolute;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    width: 100%;
+}
+
+.project_infos h3,
+.project_infos p {
+    margin-left: 20px;
+}
+
+.circle_eye {
+    position: absolute;
+    top: -27px;
+    right: 35px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    background-color: #4591B1;
+    display: flex;
+}
+
+.circle_eye i {
+    margin: auto;
+    font-size: 18px;
 }
