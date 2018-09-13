@@ -1,6 +1,7 @@
 body,
 html {
     height: 100%;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -39,7 +40,6 @@ header ul {
 }
 
 header li {
-    line-height: 50px;
     height: 100%;
     list-style: none;
 }
@@ -58,12 +58,12 @@ header li a {
 
 header li a:hover {
     color: #000;
-    border-top: 3px solid #5DADD3;
+    border-top: 3px solid #5CADD3;
 }
 
 header [href="#home"] {
     color: #000;
-    border-top: 3px solid #5DADD3;
+    border-top: 3px solid #5CADD3;
 }
 
 #home {
@@ -121,8 +121,8 @@ header [href="#home"] {
 .arrow {
     height: 10px;
     width: 10px;
-    border-bottom: 2px solid rgba(255, 255, 255, 0.78);
-    border-left: 2px solid rgba(255, 255, 255, 0.78);
+    border-bottom: 2px solid rgba(255, 255, 255, 0.88);
+    border-left: 2px solid rgba(255, 255, 255, 0.88);
 }
 
 #left div {
@@ -201,7 +201,7 @@ header [href="#home"] {
 
 #text_slider a {
     text-decoration: none;
-    background-color: #5DADD3;
+    background-color: #5CADD3;
     padding: 10px;
     border-radius: 3px;
     border-bottom: 3px solid #4A86A5;
@@ -214,13 +214,13 @@ header [href="#home"] {
 }
 
 #text_slider span {
-    color: #5DADD3;
+    color: #5CADD3;
 }
 
 #loading {
     width: 0%;
     height: 5px;
-    background-color: #5DADD3;
+    background-color: #5CADD3;
     position: absolute;
     bottom: 0;
     animation: loading_bar 20s linear infinite;
@@ -302,7 +302,7 @@ h2 {
 hr {
     width: 100px;
     border: none;
-    border-top: 2px solid #ddd;
+    border-top: 1px solid #ddd;
     text-align: center;
     overflow: visible;
 }
@@ -312,11 +312,11 @@ hr:after {
     display: inline-block;
     height: 12px;
     width: 12px;
-    border: 5px solid #fff;
+    border: 4px solid #fff;
     position: relative;
-    top: -12px;
+    top: -11px;
     border-radius: 50%;
-    background-color: #5DADD3;
+    background-color: #5CADD3;
 }
 
 h3 {
@@ -332,6 +332,7 @@ section > p {
     width: 60%;
     margin: 0 auto;
     text-align: center;
+    color: #555;
 }
 
 #services {
@@ -354,6 +355,7 @@ section > p {
 }
 
 #services_infos p {
+    color: #555;
     margin-top: 8px;
     line-height: 24px;
 }
@@ -383,7 +385,7 @@ section > p {
     width: 10px;
     border: 3px solid #fff;
     border-radius: 50%;
-    background-color: #5DADD3;
+    background-color: #5CADD3;
     position: absolute;
     top: 50%;
     right: -8px;
@@ -391,7 +393,72 @@ section > p {
 }
 
 .circle i {
-    color: #5DADD3;
+    color: #5CADD3;
     margin: auto;
     font-size: 28px;
+}
+
+#portfolio {
+    background-color: #F5F5F5;
+    padding: 15px 0;
+}
+
+#portfolio_menu {
+    font-family: 'roboto', sans-serif;
+    padding: 40px 0;
+    color: #555;
+}
+
+#portfolio_menu ul {
+    display: flex;
+    justify-content: center;
+}
+
+#portfolio_menu li {
+    list-style: none;
+    background-color: #E5E5E5;
+    padding: 15px;
+    cursor: pointer;
+    border-bottom: 3px solid transparent;
+    position: relative;
+}
+
+#portfolio_menu li:first-child {
+    border-radius: 5px 0 0 5px;
+    border-bottom: 3px solid #468CAD;
+    background-color: #5CADD3;
+    color: #fff;
+}
+
+#portfolio_menu li:after {
+    content: "";
+    border-style: solid;
+    border-width: 8px 8px 0 8px;
+    border-color: #468CAD transparent transparent transparent;
+    position: absolute;
+    bottom: -11px;
+    left: calc(50% - 4px);
+    visibility: hidden;
+}
+
+#portfolio_menu li:first-child:after {
+    visibility: visible;
+}
+
+#portfolio_menu li:hover {
+    border-bottom: 3px solid #468CAD;
+    background-color: #5CADD3;
+    color: #fff;
+}
+
+#portfolio_menu li:hover:after {
+    visibility: visible;
+}
+
+#portfolio_menu li:last-child {
+    border-radius: 0 5px 5px 0;
+}
+
+#projects img {
+    width: 20%;
 }
