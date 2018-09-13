@@ -333,3 +333,65 @@ section > p {
     margin: 0 auto;
     text-align: center;
 }
+
+#services {
+    height: 80%;
+}
+
+#services > div {
+    padding: 50px 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+#services_infos {
+    width: 40%;
+    align-self: flex-end;
+}
+
+#services_infos h3 {
+    margin-bottom: 0;
+}
+
+#services_infos p {
+    margin-top: 8px;
+    line-height: 24px;
+}
+
+#services_infos > div {
+    display: flex;
+}
+
+#services_infos > div div:last-child {
+    margin-left: 30px;
+    width: 80%;
+}
+
+.circle {
+    align-self: center;
+    border: 1px solid #ddd;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    display: flex;
+    position: relative;
+}
+
+.circle:after {
+    content: "";
+    height: 10px;
+    width: 10px;
+    border: 3px solid #fff;
+    border-radius: 50%;
+    background-color: #5DADD3;
+    position: absolute;
+    top: 50%;
+    right: -8px;
+    transform: translateY(-50%);
+}
+
+.circle i {
+    color: #5DADD3;
+    margin: auto;
+    font-size: 28px;
+}
