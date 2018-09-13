@@ -1,10 +1,10 @@
-body,
 html {
-    height: 100%;
+    height: 400%;
     scroll-behavior: smooth;
 }
 
 body {
+    height: 100%;
     margin: 0;
     overflow-x: hidden;
 }
@@ -67,7 +67,7 @@ header [href="#home"] {
 }
 
 #home {
-    height: 100%;
+    height: 25%;
 }
 
 #home > div:first-child {
@@ -191,7 +191,7 @@ header [href="#home"] {
     margin: 0;
     font-family: 'roboto', sans-serif;
     font-weight: bold;
-    font-size: 2em;
+    font-size: 2.5vw;
 }
 
 #text_slider p,
@@ -336,7 +336,7 @@ section > p {
 }
 
 #services {
-    height: 80%;
+    height: 20%;
 }
 
 #services > div {
@@ -476,14 +476,20 @@ section > p {
 #projects article {
     position: relative;
     margin-bottom: 30px;
+    overflow: hidden;
 }
 
 .project_infos {
     position: absolute;
-    bottom: 0;
+    bottom: -150px;
     background-color: rgba(0, 0, 0, 0.5);
     color: #fff;
     width: 100%;
+}
+
+#projects article:hover .project_infos {
+    bottom: 0;
+    transition-duration: 0.5s;
 }
 
 .project_infos h3,
@@ -506,4 +512,33 @@ section > p {
 .circle_eye i {
     margin: auto;
     font-size: 18px;
+}
+
+#contact {
+    position: relative;
+    height: 15%;
+}
+
+#blue_layer {
+    background-color: rgba(0, 128, 255, 0.17);
+    width: 100%;
+    height: 100%;
+}
+
+iframe {
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+}
+
+#contact form {
+    background-color: rgba(255, 255, 255, 0.81);
+    position: absolute;
+    border-radius: 3px;
+    width: 250px;
+    top: 6%;
+    right: 10%;
+    padding: 0 30px;
 }
