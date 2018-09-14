@@ -1,10 +1,8 @@
 html {
-    height: 400%;
     scroll-behavior: smooth;
 }
 
 body {
-    height: 100%;
     margin: 0;
     overflow-x: hidden;
 }
@@ -66,10 +64,6 @@ header [href="#home"] {
     border-top: 3px solid #5CADD3;
 }
 
-#home {
-    height: 25%;
-}
-
 #home > div:first-child {
     height: 87px;
 }
@@ -82,7 +76,7 @@ header [href="#home"] {
 
 #slider {
     overflow: hidden;
-    max-height: calc(100% - 187px);
+    max-height: calc(100vh - 187px);
     position: relative;
     width: 300%;
     animation: slider 20s infinite;
@@ -332,10 +326,6 @@ section > p {
     color: #555;
 }
 
-#services {
-    height: 20%;
-}
-
 #services > div {
     padding: 50px 0;
     display: flex;
@@ -392,7 +382,7 @@ section > p {
 .circle i {
     color: #5CADD3;
     margin: auto;
-    font-size: 28px;
+    font-size: 1.9em;
 }
 
 #portfolio {
@@ -508,7 +498,7 @@ section > p {
 
 .circle_eye i {
     margin: auto;
-    font-size: 18px;
+    font-size: 1.2em;
 }
 
 #contact {
@@ -552,7 +542,7 @@ iframe {
     border-radius: 5px;
     width: calc(100% - 22px);
     font-family: 'roboto', sans-serif;
-    font-size: 15px;
+    font-size: 1em;
     padding: 8px 10px;
 }
 
@@ -562,7 +552,7 @@ input[type="submit"] {
     border-radius: 3px;
     background-color: #5CADD3;
     color: #fff;
-    font-size: 15px;
+    font-size: 1em;
     padding: 8px 10px;
 }
 
@@ -571,7 +561,7 @@ form p {
 }
 
 form h3 {
-    font-size: 25px;
+    font-size: 1.6em;
     font-family: 'roboto-bold', sans-serif;
     letter-spacing: -0.5px;
 }
