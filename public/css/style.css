@@ -399,6 +399,7 @@ section > p {
 #portfolio_menu ul {
     display: flex;
     justify-content: center;
+    padding: 0;
 }
 
 #portfolio_menu li {
@@ -451,16 +452,16 @@ section > p {
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
-    align-content: space-between;
     flex-wrap: wrap;
 }
 
 #projects img {
     display: block;
-    width: 550px;
+    width: 320px;
 }
 
 #projects article {
+    margin: 0 auto;
     position: relative;
     margin-bottom: 30px;
     overflow: hidden;
@@ -526,6 +527,7 @@ iframe {
     border-radius: 3px;
     width: 25%;
     max-width: 400px;
+    min-width: 300px;
     top: 50%;
     transform: translateY(-50%);
     right: 10%;
@@ -565,3 +567,4 @@ form h3 {
     font-family: 'roboto-bold', sans-serif;
     letter-spacing: -0.5px;
 }
+
