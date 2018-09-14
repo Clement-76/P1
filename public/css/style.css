@@ -539,7 +539,8 @@ iframe {
     border-bottom: 1px dotted #000;
 }
 
-#contact input:not([type="submit"]), textarea {
+#contact input:not([type="submit"]),
+textarea {
     border: 1px solid #ccc;
     border-radius: 5px;
     width: calc(100% - 22px);
@@ -568,3 +569,111 @@ form h3 {
     letter-spacing: -0.5px;
 }
 
+@media all and (max-width: 575px) {
+
+    html {
+        overflow-x: hidden;
+    }
+
+    header {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100px;
+    }
+
+    header nav {
+        height: 50%;
+        width: 85%;
+    }
+
+    header a img {
+        width: 180px;
+        padding: 0;
+    }
+
+    header li a {
+        padding: 0;
+    }
+
+    header li a:hover,
+    header li a,
+    header [href="#home"] {
+        border: none;
+    }
+
+    #home > div:first-child {
+        height: 100px;
+    }
+
+    #home > div:last-child {
+        height: 50px;
+    }
+
+    .semi_circle {
+        width: 15px;
+        height: 30px;
+    }
+
+    .arrow {
+        height: 5px;
+        width: 5px;
+    }
+
+    .semi_circle#right {
+        left: calc(33.33% - 15px);
+    }
+
+    @keyframes arrow_slider_right {
+        0% {
+            left: calc(33.33% - 15px);
+        }
+
+        40% {
+            left: calc(33.33% - 15px);
+        }
+
+        50% {
+            left: calc(66.66% - 15px);
+        }
+
+        90% {
+            left: calc(66.66% - 15px);
+        }
+
+        100% {
+            left: calc(100% - 15px);
+        }
+    }
+
+    #text_slider {
+        height: 80%;
+    }
+    
+    #text_slider h1 {
+        font-size: 0.8em;
+    }
+    
+    #text_slider p, #text_slider a {
+        font-size: 0.6em;
+    }
+    
+    #text_slider a {
+        padding: 5px;
+        position: static;
+    }
+    
+    #loading {
+        height: 3px;
+    }
+    
+    
+}
+
+@media all and (min-width: 576px) and (max-width: 767px) {}
+
+@media all and (min-width: 768px) and (max-width: 991px) {}
+
+@media all and (min-width: 992px) and (max-width: 1199px) {}
+
+@media all and (min-width: 1200px) {}
