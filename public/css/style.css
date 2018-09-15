@@ -425,7 +425,8 @@ section > p {
     border-color: #468CAD transparent transparent transparent;
     position: absolute;
     bottom: -11px;
-    left: calc(50% - 4px);
+    left: 50%;
+    transform: translateX(-50%);
     visibility: hidden;
 }
 
@@ -526,6 +527,7 @@ iframe {
     position: absolute;
     border-radius: 3px;
     width: 25%;
+    max-height: calc(99vh - 100px);
     max-width: 400px;
     min-width: 300px;
     top: 50%;
