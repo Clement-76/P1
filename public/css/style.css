@@ -457,7 +457,7 @@ section > p {
 
 #projects img {
     display: block;
-    width: 320px;
+    width: 290px;
 }
 
 #projects article {
@@ -504,7 +504,7 @@ section > p {
 
 #contact {
     position: relative;
-    height: 650px;
+    height: calc(100vh - 87px);
 }
 
 #blue_layer {
@@ -536,7 +536,7 @@ iframe {
 }
 
 #tel {
-    border-bottom: 1px dotted #000;
+    border-bottom: 1px dotted #555;
 }
 
 #contact input:not([type="submit"]),
@@ -546,7 +546,7 @@ textarea {
     width: calc(100% - 22px);
     font-family: 'roboto', sans-serif;
     font-size: 1em;
-    padding: 8px 10px;
+    padding: 6px 8px;
 }
 
 input[type="submit"] {
@@ -559,14 +559,16 @@ input[type="submit"] {
     padding: 8px 10px;
 }
 
-form p {
+#infos {
     color: #555;
+    margin-top: 10px;
 }
 
 form h3 {
     font-size: 1.6em;
     font-family: 'roboto-bold', sans-serif;
     letter-spacing: -0.5px;
+    margin: 20px 0 0 0;
 }
 
 @media all and (max-width: 575px) {
@@ -647,27 +649,31 @@ form h3 {
     }
 
     #text_slider {
-        height: 80%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
     
     #text_slider h1 {
-        font-size: 0.8em;
+        font-size: 1em;
+        margin-bottom: 5px;
     }
     
-    #text_slider p, #text_slider a {
-        font-size: 0.6em;
+    #text_slider p {
+        font-size: 0.8em;
+        margin: 0;
     }
     
     #text_slider a {
-        padding: 5px;
-        position: static;
+        display: none;
     }
     
     #loading {
         height: 3px;
     }
     
-    
+
 }
 
 @media all and (min-width: 576px) and (max-width: 767px) {}
