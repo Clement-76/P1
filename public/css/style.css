@@ -527,7 +527,6 @@ iframe {
     position: absolute;
     border-radius: 3px;
     width: 25%;
-    max-height: calc(99vh - 100px);
     max-width: 400px;
     min-width: 300px;
     top: 50%;
@@ -705,24 +704,45 @@ form h3 {
         margin-left: 0;
         width: 75%;
     }
-    
+
     #portfolio_menu {
         padding: 15px 0;
     }
-    
+
     #portfolio_menu li {
         padding: 12px 6px;
     }
-    
+
     #contact {
         height: calc(100vh - 100px);
     }
-    
+
     #contact form {
         background-color: rgba(255, 255, 255, 0.91);
         border-radius: 8px;
         left: 50%;
         transform: translate(-50%, -50%);
+    }
+
+    #contact input:not([type="submit"]),
+    textarea {
+        font-size: 0.9em;
+    }
+    
+    input[type="submit"] {
+        font-size: 0.9em;
+    }
+    
+    form h3 {
+        font-size: 1.4em;
+    }
+    
+    #infos {
+        font-size: 0.9em;
+    }
+    
+    #contact textarea {
+        height: 90px;
     }
 }
 
