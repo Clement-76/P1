@@ -1032,6 +1032,24 @@ form h3 {
     }    
 }
 
-@media all and (min-width: 1200px) {
+@media all and (min-width: 1200px) and (max-width: 1339px) {
     
+    #projects {
+        justify-content: space-evenly;
+    }
+    
+    #projects img {
+        width: 400px;
+    }    
+}
+
+@media all and (min-width: 1440px) {
+    #projects {
+        justify-content: space-evenly;
+    }
+    
+    #projects img {
+        width: 20vw;
+        max-width: 550px;
+    }  
 }
