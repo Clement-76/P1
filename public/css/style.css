@@ -1,10 +1,11 @@
 html {
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 body {
-    margin: 0;
     overflow-x: hidden;
+    margin: 0;
 }
 
 header {
@@ -211,11 +212,16 @@ header [href="#home"] {
 }
 
 #loading {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+#loading div {
     width: 0%;
     height: 5px;
     background-color: #5CADD3;
-    position: absolute;
-    bottom: 0;
     animation: loading_bar 20s linear infinite;
 }
 
@@ -351,7 +357,7 @@ section > p {
     display: flex;
 }
 
-#services_infos > div div:last-child {
+.text_services {
     margin-left: 30px;
     width: 80%;
 }
@@ -452,7 +458,7 @@ section > p {
     width: 90%;
     margin: 0 auto;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-wrap: wrap;
 }
 
@@ -462,7 +468,6 @@ section > p {
 }
 
 #projects article {
-    margin: 0 auto;
     position: relative;
     margin-bottom: 30px;
     overflow: hidden;
@@ -546,8 +551,13 @@ textarea {
     border-radius: 5px;
     width: calc(100% - 19px);
     font-family: 'roboto', sans-serif;
-    font-size: 1em;
     padding: 6px 8px;
+}
+
+#contact input,
+textarea,
+#infos {
+    font-size: 1em;
 }
 
 input[type="submit"] {
@@ -556,11 +566,11 @@ input[type="submit"] {
     border-radius: 3px;
     background-color: #5CADD3;
     color: #fff;
-    font-size: 1em;
     padding: 8px 10px;
 }
 
-#contact input, textarea {
+#contact input,
+textarea {
     -webkit-appearance: none;
 }
 
@@ -577,10 +587,6 @@ form h3 {
 }
 
 @media all and (max-width: 575px) {
-
-    html {
-        overflow-x: hidden;
-    }
 
     header {
         flex-direction: column;
@@ -674,7 +680,7 @@ form h3 {
         display: none;
     }
 
-    #loading {
+    #loading div {
         height: 3px;
     }
 
@@ -704,7 +710,7 @@ form h3 {
         justify-content: space-between;
     }
 
-    #services_infos > div div:last-child {
+    .text_services {
         margin-left: 0;
         width: 75%;
     }
@@ -721,33 +727,26 @@ form h3 {
         height: calc(100vh - 100px);
         min-height: 450px;
     }
-    
+
     #contact form {
         border-radius: 8px;
         left: 50%;
         transform: translate(-50%, -50%);
         min-width: 250px;
     }
-    
+
     form p {
         margin: 10px 0;
     }
-    
-    #contact input:not([type="submit"]),
-    textarea {
-        font-size: 0.9em;
-    }
 
-    input[type="submit"] {
+    #contact input,
+    textarea,
+    #infos {
         font-size: 0.9em;
     }
 
     form h3 {
         font-size: 1.4em;
-    }
-
-    #infos {
-        font-size: 0.9em;
     }
 
     #contact textarea {
@@ -756,10 +755,6 @@ form h3 {
 }
 
 @media all and (min-width: 576px) and (max-width: 767px) {
-
-    html {
-        overflow-x: hidden;
-    }
 
     header {
         flex-direction: column;
@@ -797,38 +792,38 @@ form h3 {
     }
 
     .semi_circle {
-        width: 15px;
-        height: 30px;
+        width: 20px;
+        height: 40px;
     }
 
     .arrow {
-        height: 5px;
-        width: 5px;
+        height: 6px;
+        width: 6px;
     }
 
     .semi_circle#right {
-        left: calc(33.33% - 15px);
+        left: calc(33.33% - 20px);
     }
 
     @keyframes arrow_slider_right {
         0% {
-            left: calc(33.33% - 15px);
+            left: calc(33.33% - 20px);
         }
 
         40% {
-            left: calc(33.33% - 15px);
+            left: calc(33.33% - 20px);
         }
 
         50% {
-            left: calc(66.66% - 15px);
+            left: calc(66.66% - 20px);
         }
 
         90% {
-            left: calc(66.66% - 15px);
+            left: calc(66.66% - 20px);
         }
 
         100% {
-            left: calc(100% - 15px);
+            left: calc(100% - 20px);
         }
     }
 
@@ -840,7 +835,7 @@ form h3 {
     }
 
     #text_slider h1 {
-        font-size: 1em;
+        font-size: 1.2em;
         margin-bottom: 5px;
     }
 
@@ -853,8 +848,8 @@ form h3 {
         display: none;
     }
 
-    #loading {
-        height: 3px;
+    #loading div {
+        height: 4px;
     }
 
     section > p {
@@ -874,26 +869,22 @@ form h3 {
 
     #services_infos {
         align-self: baseline;
-        width: 90%;
+        width: 85%;
         margin: 0 auto;
     }
 
     #services_infos > div {
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
     }
 
-    #services_infos > div div:last-child {
+    .text_services {
         margin-left: 0;
         width: 75%;
     }
 
     #portfolio_menu {
         padding: 15px 0;
-    }
-
-    #portfolio_menu li {
-        padding: 12px 6px;
     }
 
     #contact {
@@ -910,10 +901,12 @@ form h3 {
 
     #contact input:not([type="submit"]),
     textarea {
-        font-size: 0.9em;
+        padding: 8px;
     }
 
-    input[type="submit"] {
+    #contact input,
+    textarea,
+    #infos {
         font-size: 0.9em;
     }
 
@@ -921,115 +914,39 @@ form h3 {
         font-size: 1.4em;
     }
 
-    #infos {
-        font-size: 0.9em;
-    }
-
     #contact textarea {
-        height: 90px;
+        height: 110px;
     }
 }
 
 @media all and (min-width: 768px) and (max-width: 991px) {
 
-    html {
-        overflow-x: hidden;
-    }
-
-    header {
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        height: 100px;
-    }
-
     header nav {
-        height: 50%;
-        width: 60%;
+        width: 40%;
     }
 
     header a img {
-        width: 180px;
-        padding: 0;
+        width: 200px;
     }
 
     header li a {
-        padding: 0;
-    }
-
-    header li a:hover,
-    header li a,
-    header [href="#home"] {
-        border: none;
-    }
-
-    #home > div:first-child {
-        height: 100px;
+        padding: 0 6px;
     }
 
     #home > div:last-child {
-        height: 50px;
-    }
-
-    .semi_circle {
-        width: 15px;
-        height: 30px;
-    }
-
-    .arrow {
-        height: 5px;
-        width: 5px;
-    }
-
-    .semi_circle#right {
-        left: calc(33.33% - 15px);
-    }
-
-    @keyframes arrow_slider_right {
-        0% {
-            left: calc(33.33% - 15px);
-        }
-
-        40% {
-            left: calc(33.33% - 15px);
-        }
-
-        50% {
-            left: calc(66.66% - 15px);
-        }
-
-        90% {
-            left: calc(66.66% - 15px);
-        }
-
-        100% {
-            left: calc(100% - 15px);
-        }
+        height: 60px;
     }
 
     #text_slider {
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
+        height: 170px;
     }
 
     #text_slider h1 {
-        font-size: 1em;
-        margin-bottom: 5px;
+        font-size: 1.3em;
     }
 
-    #text_slider p {
-        font-size: 0.8em;
-        margin: 0;
-    }
-
-    #text_slider a {
-        display: none;
-    }
-
-    #loading {
-        height: 3px;
+    #loading div {
+        height: 4px;
     }
 
     section > p {
@@ -1043,7 +960,7 @@ form h3 {
 
     #services img {
         display: block;
-        width: 90%;
+        width: 80%;
         margin: 0 auto;
     }
 
@@ -1058,7 +975,18 @@ form h3 {
         justify-content: space-between;
     }
 
-    #services_infos > div div:last-child {
+    #services_infos {
+        align-self: baseline;
+        width: 75%;
+        margin: 0 auto;
+    }
+
+    #services_infos > div {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .text_services {
         margin-left: 0;
         width: 75%;
     }
@@ -1066,45 +994,44 @@ form h3 {
     #portfolio_menu {
         padding: 15px 0;
     }
-
-    #portfolio_menu li {
-        padding: 12px 6px;
-    }
-
-    #contact {
-        height: calc(100vh - 100px);
-        min-height: 450px;
+    
+    #projects {
+        width: 80%;
     }
 
     #contact form {
-        background-color: rgba(255, 255, 255, 0.91);
-        border-radius: 8px;
         left: 50%;
         transform: translate(-50%, -50%);
     }
-
-    #contact input:not([type="submit"]),
-    textarea {
-        font-size: 0.9em;
-    }
-
-    input[type="submit"] {
-        font-size: 0.9em;
-    }
-
-    form h3 {
-        font-size: 1.4em;
-    }
-
-    #infos {
-        font-size: 0.9em;
-    }
-
-    #contact textarea {
-        height: 90px;
-    }
 }
 
-@media all and (min-width: 992px) and (max-width: 1199px) {}
+@media all and (min-width: 992px) and (max-width: 1199px) {
+    
+    #text_slider {
+        height: 190px;
+    }
+    
+    #home > div:last-child {
+        height: 80px;
+    }
+    
+    #services img {
+        width: 450px;
+    }
+    
+    #services_infos {
+        width: 60%;
+    }
+    
+    #projects {
+        justify-content: space-evenly;
+    }
+    
+    #projects img {
+        width: 400px;
+    }    
+}
 
-@media all and (min-width: 1200px) {}
+@media all and (min-width: 1200px) {
+    
+}
