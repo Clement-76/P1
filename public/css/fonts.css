@@ -11,3 +11,25 @@
     font-weight: bold;
     font-style: normal;
 }
+
+@font-face {
+    font-family: 'FontAwesome solid';
+    src: url("/public/fonts/fa-solid-900.eot");
+    src: url("/public/fonts/fa-solid-900.eot?#iefix") format("embedded-opentype"),            url("/public/fonts/fa-solid-900.woff2") format("woff2"),
+         url("/public/fonts/fa-solid-900.woff") format("woff"),
+         url("/public/fonts/fa-solid-900.ttf") format("truetype"),
+         url("/public/fonts/fa-solid-900.svg") format("svg");
+    font-style: normal;
+    font-weight: 900;
+}
+
+@font-face {
+    font-family: 'FontAwesome regular';
+    src: url("/public/fonts/fa-regular-400.eot");
+    src: url("/public/fonts/fa-regular-400.eot?#iefix") format("embedded-opentype"),            url("/public/fonts/fa-regular-400.woff2") format("woff2"),
+         url("/public/fonts/fa-regular-400.woff") format("woff"),
+         url("/public/fonts/fa-regular-400.ttf") format("truetype"),
+         url("/public/fonts/fa-regular-400.svg") format("svg");
+    font-style: normal;
+    font-weight: 400;
+}

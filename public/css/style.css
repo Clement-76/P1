@@ -302,6 +302,7 @@ hr {
     border: none;
     border-top: 1px solid #ddd;
     text-align: center;
+    margin: 8px auto;
     overflow: visible;
 }
 
@@ -389,6 +390,31 @@ section > p {
     color: #5CADD3;
     margin: auto;
     font-size: 1.9em;
+}
+
+.fas, .far {
+    font-style: normal;
+    line-height: 1;
+}
+
+.fas {
+    font-family: 'FontAwesome solid';
+}
+
+.far {
+    font-family: 'FontAwesome regular';
+}
+
+.fa-chart-line:before {
+    content: '\f201';
+}
+
+.fa-cubes:before {
+    content: '\f1b3';
+}
+
+.fa-chart-pie:before {
+    content: '\f200';
 }
 
 #portfolio {
@@ -503,10 +529,16 @@ section > p {
     display: flex;
 }
 
+.fa-eye:before {
+    content: '\f06e';
+}
+
 .circle_eye i {
     margin: auto;
     font-size: 1.2em;
 }
+
+
 
 #contact {
     position: relative;
@@ -707,7 +739,7 @@ form h3 {
             left: calc(100% - 20px);
         }
     }
-    
+
     #text_slider h1 {
         font-size: 1.2em;
         margin-bottom: 5px;
@@ -746,7 +778,7 @@ form h3 {
 
 /* Phones and small tablets */
 @media all and (max-width: 767px) {
-    
+
     header {
         flex-direction: column;
         align-items: center;
@@ -940,7 +972,7 @@ form h3 {
     }
 
     #projects {
-        justify-content: space-evenly;
+        justify-content: space-around;
     }
 
     #projects img {
@@ -952,7 +984,7 @@ form h3 {
 @media all and (min-width: 1200px) and (max-width: 1339px) {
 
     #projects {
-        justify-content: space-evenly;
+        justify-content: space-around;
     }
 
     #projects img {
@@ -963,7 +995,7 @@ form h3 {
 /* Large and extra large desktops */
 @media all and (min-width: 1440px) {
     #projects {
-        justify-content: space-evenly;
+        justify-content: space-around;
     }
 
     #projects img {
