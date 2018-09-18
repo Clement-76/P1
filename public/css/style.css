@@ -100,13 +100,13 @@ header [href="#home"] {
     align-items: center;
 }
 
-.semi_circle#left {
+.semi_circle.left {
     border-top-right-radius: 30px;
     border-bottom-right-radius: 30px;
     animation: arrow_slider_left 20s infinite;
 }
 
-.semi_circle#right {
+.semi_circle.right {
     border-top-left-radius: 30px;
     border-bottom-left-radius: 30px;
     left: calc(33.33% - 30px);
@@ -120,11 +120,11 @@ header [href="#home"] {
     border-left: 2px solid rgba(255, 255, 255, 0.88);
 }
 
-#left div {
+.left div {
     transform: rotateZ(45deg);
 }
 
-#right div {
+.right div {
     transform: rotateZ(-135deg);
 }
 
@@ -567,11 +567,6 @@ input[type="submit"] {
     background-color: #5CADD3;
     color: #fff;
     padding: 8px 10px;
-}
-
-#contact input,
-textarea {
-    -webkit-appearance: none;
 }
 
 #infos {
