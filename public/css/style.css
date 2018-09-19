@@ -552,6 +552,7 @@ section > p {
 }
 
 iframe {
+    border: none;
     position: absolute;
     top: 0;
     z-index: -1;
